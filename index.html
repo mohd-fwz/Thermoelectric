@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Thermoelectric Power</title>
+</head>
+<body>
+    <div id="light-box">
+        <span id="close">&times;</span>
+        <img src="" id="enlarged-img">
+    </div>
+    <header>
+        <h1>Thermoelectric Power</h1>
+        <div class="index-box">
+            <a href="#about-section" class="page-links" id="about-link">About</a>
+            <a href="#components-section" class="page-links" id="components-link">Components</a>
+            <a href="#demo-section" class="page-links" id="demo-link">Demo</a>
+            <a href="#team-section" class="page-links" id="team-link">Team</a>
+        </div>
+    </header>
+    <main>
+        <div id="about-section">
+            <h2 class="about-heading">Aboutℹ️</h2>
+            <p>The project focuses on energy harvesting using Thermoelectric Generators (TEGs) combined with Phase Change Materials (PCMs). TEGs convert heat directly into electricity when a temperature difference exists across their surfaces. PCMs are materials that absorb or release heat while changing phase (solid ↔ liquid) at specific temperatures, allowing them to maintain a constant temperature over time.
+            </p>
+            <strong>Applications</strong>
+            <ul>
+                <li>Waste Heat Recovery - Harvests the waste heat from electronic components to power small fans or sensors.</li>
+                <li>Automotive energy Saveging - Generates supplementary power for electronics or sensors by converting waste heat using PCMs and TEGs.</li>
+                <li>Self-Powered IoT Devices - Eliminates the need for battery replacement by harvesting ambient heat </li>
+            </ul>
+            <img src="protoype_img.png" alt="protoype-img">
+        </div>
+        <div id="components-section">
+            <h2 class="comp-heading">Components🔌</h2>
+            <table>
+                <caption>Project Budget Breakdown</caption>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Cost (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3.7V Li Ion Battery</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>3 TEGs</td>
+                        <td>279</td>
+                    </tr>
+                    <tr>
+                        <td>TP4056</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>2 Types of PCM</td>
+                        <td>950</td>
+                    </tr>
+                    <tr>
+                        <td>DC-DC BOOSTER</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Aluminium Packet</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Voltage Sensor</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>3 Heat Sinks</td>
+                        <td>120</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>2011</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="comp-images">
+                <img src="battery_img.png" alt="battery">
+                <img src="tp4056.png" alt="tp4056">
+                <img src="heat_teg.png" alt="heat_teg">
+                <button class="previous" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </div>
+        <div id="demo-section">
+            <h2 class="demo-heading">Demonstration🎥</h2>
+            <div class="demo-contents">
+                <video controls>
+                <source src="proto_vid.mp4">
+            </video>
+            </div>
+        </div>
+        <div id="team-section">
+            <h2 class="team-heading">Radiant Minds⚡</h2>
+            <a href="mailto: ashwinmangalore.ec24@rvce.edu.in">
+                <div id="member-data">
+                <div class="team-members">
+                <p><strong>Ashwin Mangalore</strong></p>
+                <p>ECE Department</p>
+                <p>1RV24EC040</p>
+                </div>
+            </a>
+            <a href="mailto:mdfawazzakir.is24@rvce.edu.in">
+                <div class="team-members">
+                <p><strong>Mohammed Fawaz Zakir</strong></p>
+                <p>ISE Department</p>
+                <p>1RV24IS073</p>
+                </div>
+            </a>
+            <a href="mailto: shriyanskumar.is24@rvce.edu.in">
+                <div class="team-members">
+                <p><strong>Shriyans Kumar</strong></p>
+                <p>ISE Department</p>
+                <p>1RV24IS124</p>
+                </div>
+            </a>
+            <a href="mailto:adithyam.ai24@rvce.edu.in">
+                <div class="team-members">
+                <p><strong>Aditya Mahadev</strong></p>
+                <p>AIML Department</p>
+                <p>1RV24CI010</p>
+                </div>
+            </a>
+            <a href="mailto:saakshivp.ai24@rvce.edu.in">
+                <div class="team-members">
+                <p><strong>Sakshi V P</strong></p>
+                <p>AIML Department</p>
+                <p>1RV24CI101</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <strong>Mohd Fawaz Zakir</strong>
+        <div>
+            <a id="github" href="https://github.com/mohd-fwz" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a id="email" href="mailto:fawazmd370@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
